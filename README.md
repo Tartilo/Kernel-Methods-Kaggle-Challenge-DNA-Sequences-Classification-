@@ -1,1 +1,1 @@
-# MVA---Kernel-Methods-Kaggle-Challenge-DNA-Sequences-Classification-
+# Kernel-Methods-Kaggle-Challenge-DNA-Sequences-Classification-
