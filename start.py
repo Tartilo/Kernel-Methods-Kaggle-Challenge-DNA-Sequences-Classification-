@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import argparse
 from compute_kernel_matrix import compute_kernel_matrix_parallel
-from kernel_logistic_regression import train_kernel_logistic_regression, predict_kernel_logistic_binary
+from logistic_classifier import train_kernel_logistic_regression, predict_kernel_logistic_binary
 
 def load_dataset(train_file, test_file, label_file):
     """Loads a single dataset: training sequences, labels, and test sequences."""
@@ -21,7 +21,10 @@ def load_dataset(train_file, test_file, label_file):
 
 def main(args):
     """Main function to execute kernel logistic regression for each dataset separately and concatenate predictions."""
+    
     all_predictions = []
+    args.m_values = [None if m == "None" else int(m) for m in args.m_values]
+    args.lambda_decay_values = [None if ld == "None" else float(ld) for ld in args.lambda_decay_values]
 
     for i in range(3):  # Loop over three datasets
         print(f"\nProcessing dataset {i}...")
@@ -85,8 +88,8 @@ if __name__ == "__main__":
     parser.add_argument("--kernels", nargs=3, type=str, choices=["spectrum", "substring", "mismatch"], required=True, help="Kernel type for each dataset (3 values)")
     parser.add_argument("--k_values", nargs=3, type=int, required=True, help="k-mer length for each dataset (3 values)")
     
-    parser.add_argument("--m_values", nargs=3, type=int, default=[None, None, None], help="Number of mismatches for each dataset (use None for non-mismatch kernels)")
-    parser.add_argument("--lambda_decay_values", nargs=3, type=float, default=[None, None, None], help="Decay factor for each dataset (use None for non-substring kernels)")
+    parser.add_argument("--m_values", nargs=3, type=str, default=["None", "None", "None"], help="Number of mismatches for each dataset (use 'None' for non-mismatch kernels)")
+    parser.add_argument("--lambda_decay_values", nargs=3, type=str, default=["None", "None", "None"], help="Decay factor for each dataset (use 'None' for non-substring kernels)")
 
     parser.add_argument("--reg_lambda", type=float, default=1e-4, help="Regularization parameter for logistic regression")
 
