@@ -29,6 +29,7 @@ def main(args):
     all_predictions = []
     args.m_values = [None if m == "None" else int(m) for m in args.m_values]
     args.lambda_decay_values = [None if ld == "None" else float(ld) for ld in args.lambda_decay_values]
+    args.reg_lambda = [float(lmbd) for lmbd in args.reg_lambda]  # Ensure correct type
 
     for i in range(3):  # Loop over three datasets
         print(f"\nProcessing dataset {i}...")
@@ -53,7 +54,8 @@ def main(args):
 
         # Train logistic regression model
         print(f"Training Kernel Logistic Regression model for dataset {i}...")
-        alpha = train_kernel_logistic_regression(K_train, y_train, args.reg_lambda)
+        alpha = train_kernel_logistic_regression(K_train, y_train, args.reg_lambda[i])
+
 
         # Make predictions
         print(f"Making predictions for dataset {i}...")
@@ -81,7 +83,7 @@ if __name__ == "__main__":
     parser.add_argument("--k_values", nargs=3, type=int, required=True, help="k-mer length for each dataset (3 values)")
     parser.add_argument("--m_values", nargs=3, type=str, default=["None", "None", "None"], help="Number of mismatches for each dataset (use 'None' for non-mismatch kernels)")
     parser.add_argument("--lambda_decay_values", nargs=3, type=str, default=["None", "None", "None"], help="Decay factor for each dataset (use 'None' for non-substring kernels)")
-    parser.add_argument("--reg_lambda", type=float, default=1e-4, help="Regularization parameter for logistic regression")
+    parser.add_argument("--reg_lambda", nargs=3, type=float, default=[1e-5, 1e-5, 1e-5], help="Regularization parameter for logistic regression (3 values, default: 1e-5)")
 
     args = parser.parse_args()
     main(args)
