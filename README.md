@@ -4,7 +4,7 @@
 This project is part of the Kaggle challenge **"Data Challenge Kernel Methods 2024-2025."** The goal of this challenge is to predict whether a DNA sequence region is binding site to a specific transcription factor. 
 All information about the Challenge can be found on the report and the following website:
 
-https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
+https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/overview
 
 ---
 
