@@ -11,18 +11,19 @@ https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
 ## 2. Structure of the Repository
 
 
-| **Folder/File**             | **Description**                                                                                                                                                                   |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data/`                  | Dataset folder                                                                                                        |
-| `README.md`              | Document explaining the project and its main functionalities.                                                                                                   |
-| `Requirements.txt`               | List of dependencies                                                                                                                  |
-| `compute_kernel_matrix.py`               | Kernel matrix computation                                                                                                                               |
-| `kernels.py`            | Kernel functions implementation                                                                                                                  |
-| `km_kaggle.ipynb`                 | Notebook for experimentation                                                                                                   |
-| `logistic_classifier.py`                  | Kernel logistic regression implementation                                                                                                                     |
-| `start.py`               | Main script to execute the pipeline                                                                                                                          |
+| **Folder/File**             | **Description**                                                                                   |
+|-----------------------------|---------------------------------------------------------------------------------------------------|
+| `data/`                     | Folder containing the dataset.                                                                   |
+| `README.md`                 | Documentation explaining the project and its main functionalities.                              |
+| `requirements.txt`           | List of dependencies.                                                                         |
+| `compute_kernel_matrix.py`   | Script for computing the kernel matrix.                                                       |
+| `kernels.py`                 | Implementation of kernel functions.                                                           |
+| `km_kaggle.ipynb`           | Jupyter notebook for experimentation.                                                          |
+| `logistic_classifier.py`     | Kernel logistic regression implementation.                                                    |
+| `start.py`                   | Main script to execute the pipeline.                                                          |
 
 ---
+
 
 ## 2. Running the code
 To execute the code, put the desired Kernels and parameters like the following example:
