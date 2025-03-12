@@ -1,4 +1,4 @@
-# Kernel-Methods-DNA-Sequences-Classification-
+# Kernel-Methods-DNA-Sequences-Classification
 
 ## 1. Kaggle Challenge Description
 This project is part of the Kaggle challenge **"Data Challenge Kernel Methods 2024-2025."** The goal of this challenge is to predict whether a DNA sequence region is binding site to a specific transcription factor. 
