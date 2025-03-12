@@ -25,7 +25,8 @@ https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
 ---
 
 
-## 2. Running the code
+## 3. Running the code
+
 To execute the code, put the desired Kernels and parameters like the following example:
 ```bash
 python start.py \
@@ -34,3 +35,15 @@ python start.py \
 --m_values 1 "None" 1 \
 --lambda_decay_values "None" "None" "None" \
 --reg_lambda 0.00001 0.00001 0.0001
+```
+
+### **Explanation of Parameters**
+| **Argument**                 | **Description**                                                                                         | **Example Values**             |
+|------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------|
+| `--kernels`                  | Names of the Kernels                            | `spectrum`, `mismatch`, `mismatch` |
+| `--k_values`                 | Substring length (`k`) for each kernel.                                      | `10 8 8`                      |
+| `--m_values`                 | Mismatch value (`m`) for Mismatch kernel. Use `none` for non-mismatch kernels.                      | `1 none 1`                    |
+| `--lambda_decay_values`      | Decay values for Substring Kernel. Use `none` if not used.                                             | `"None" "None" "None"`              |
+| `--reg_lambda`               | Regularization parameter for kernel logistic regression.                      | `0.00001 0.00001 0.0001`      |
+
+
