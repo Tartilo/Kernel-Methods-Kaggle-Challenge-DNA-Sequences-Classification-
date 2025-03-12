@@ -42,8 +42,8 @@ python start.py \
 |------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------|
 | `--kernels`                  | Names of the Kernels                            | `spectrum`, `mismatch`, `mismatch` |
 | `--k_values`                 | Substring length (`k`) for each kernel.                                      | `10 8 8`                      |
-| `--m_values`                 | Mismatch value (`m`) for Mismatch kernel. Use `none` for non-mismatch kernels.                      | `1 none 1`                    |
-| `--lambda_decay_values`      | Decay values for Substring Kernel. Use `none` if not used.                                             | `"None" "None" "None"`              |
+| `--m_values`                 | Mismatch value (`m`) for Mismatch kernel. Use `"None"` for non-mismatch kernels.                      | `1 "None" 1`                    |
+| `--lambda_decay_values`      | Decay values for Substring Kernel. Use `"None"` if not used.                                             | `"None" "None" "None"`              |
 | `--reg_lambda`               | Regularization parameter for kernel logistic regression.                      | `0.00001 0.00001 0.0001`      |
 
 
