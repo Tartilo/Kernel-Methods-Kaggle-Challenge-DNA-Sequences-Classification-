@@ -47,3 +47,9 @@ python start.py \
 | `--reg_lambda`               | Regularization parameter for kernel logistic regression.                      | `0.00001 0.00001 0.0001`      |
 
 
+## 4. References
+
+Kernel Methods Course taught at the MVA by Julien Mairal, Michael Arbel and Jean-Philippe Vert.
+
+https://mva-kernel-methods.github.io/course-page/
+
