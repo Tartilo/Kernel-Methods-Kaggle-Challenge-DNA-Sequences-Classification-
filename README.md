@@ -3,7 +3,7 @@
 ## 1. Kaggle Challenge Description
 This project is part of the Kaggle challenge **"Data Challenge Kernel Methods 2024-2025."** The goal is to classify DNA sequences using kernel-based machine learning methods. We explore different kernel functions, including the **Spectrum Kernel**, to compute similarity between sequences and use **Kernelized Logistic Regression** for classification.
 
-[Challenge Link: To be added]
+https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
 
 ---
 
@@ -24,13 +24,11 @@ This project is part of the Kaggle challenge **"Data Challenge Kernel Methods 20
 ---
 
 ## 2. Running the code
-
+To execute the code, put the desired Kernels and parameters like the following example:
+```bash
 python start.py \
 --kernels mismatch spectrum mismatch \
 --k_values 10 8 8 \
 --m_values 1 "None" 1 \
 --lambda_decay_values "None" "None" "None" \
 --reg_lambda 0.00001 0.00001 0.0001
-
-
-
