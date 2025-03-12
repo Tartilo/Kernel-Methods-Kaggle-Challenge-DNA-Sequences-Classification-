@@ -14,6 +14,7 @@ https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
 | **Folder/File**             | **Description**                                                                                   |
 |-----------------------------|---------------------------------------------------------------------------------------------------|
 | `data/`                     | Folder containing the dataset.                                                                   |
+| `KM_Kaggle_report_Vivien_Brandt.pdf`                     | Report of the Kaggle Challenge.                                                                   |
 | `README.md`                 | Documentation explaining the project and its main functionalities.                              |
 | `requirements.txt`           | List of dependencies.                                                                         |
 | `compute_kernel_matrix.py`   | Script for computing the kernel matrix.                                                       |
