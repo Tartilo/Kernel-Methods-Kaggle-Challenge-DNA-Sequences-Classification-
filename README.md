@@ -27,7 +27,7 @@ https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/data
 
 ## 3. Running the code
 
-To execute the code, put the desired Kernels and parameters like the following example:
+To execute the code, follow the given example:
 ```bash
 python start.py \
 --kernels mismatch spectrum mismatch \
