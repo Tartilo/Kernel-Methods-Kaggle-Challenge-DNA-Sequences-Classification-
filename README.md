@@ -38,7 +38,7 @@ python start.py \
 --reg_lambda 0.00001 0.00001 0.0001
 ```
 
-### **Explanation of Parameters**
+### **Explanation of the Parameters**
 | **Argument**                 | **Description**                                                                                         | **Example Values**             |
 |------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------|
 | `--kernels`                  | Names of the Kernels                            | `spectrum`, `mismatch`, `mismatch` |
