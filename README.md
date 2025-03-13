@@ -30,11 +30,11 @@ https://www.kaggle.com/competitions/data-challenge-kernel-methods-2024-2025/over
 
 To execute the code, follow the given example:
 ```bash
-python start.py \
---kernels mismatch spectrum mismatch \
---k_values 10 8 8 \
---m_values 1 "None" 1 \
---lambda_decay_values "None" "None" "None" \
+python start.py 
+--kernels mismatch spectrum mismatch 
+--k_values 10 8 8 
+--m_values 1 "None" 1 
+--lambda_decay_values "None" "None" "None" 
 --reg_lambda 0.00001 0.00001 0.0001
 ```
 
