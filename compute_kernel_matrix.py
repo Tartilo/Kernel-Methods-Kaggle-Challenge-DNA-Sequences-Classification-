@@ -6,8 +6,7 @@ from kernels import spectrum_kernel, mismatch_kernel, substring_kernel
 
 def normalize_matrix(K):
     ''' We normalize the matrix for numerical stability'''
-    diag_K=np.diag(K)
-    root_K=np.sqrt(diag_K)
+    root_K=np.sqrt(np.diag(K))
     K_inv=np.diag(1/root_K)
     return K_inv @ K @ K_inv
 
